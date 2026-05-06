@@ -206,21 +206,21 @@ Project Settings → Automation:
 
 ### Шаги
 
-- [ ] Зарегистрироваться или войти на https://github.com
-- [ ] Create new repository:
-  - Name: `hometasks`
-  - Visibility: **Private**
-  - Initialize with: README (пока пустой), `.gitignore` (Node), MIT license (опционально)
+- [x] Зарегистрироваться или войти на https://github.com — **готово**
+- [x] Create new repository — **готово:** https://github.com/Novolodskiy/HomeTasks
+  - Name: `HomeTasks`
+  - Visibility: **Public** (можно сменить на Private в Settings → Change visibility если нужно)
+  - Главная ветка: `main`
 
-### Branch protection для master
+### Branch protection для main
 
-- [ ] Settings → Branches → Add rule
-- [ ] Branch name pattern: `master`
-- [ ] Включить:
-  - Require pull request before merging
-  - Require approvals: 1
-  - Require status checks to pass
-  - Do not allow bypassing settings
+- [x] Settings → Branches → Branch protection rules — **настроено через gh CLI:**
+  - ✅ Require a pull request before merging
+  - ✅ Require approvals: 1
+  - ✅ Dismiss stale reviews on push
+  - ✅ Block force pushes
+  - ✅ Block deletions
+  - Enforce_admins: false (admin может обходить — для одного разработчика удобно)
 
 ### GitHub Actions (CI)
 
